@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOCITY - Custom Illustrations & Animation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        
+        button, a {
+            font-family: Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            transition: all 0.2s ease-in-out;
+        }
+        
+        .gradient-orange {
+            background: linear-gradient(180deg, #FF6B35 0%, #FF4500 100%);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+        
+        .gradient-orange:hover {
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3), 0 0 20px rgba(255, 107, 53, 0.4);
+        }
+    </style>
+<style>/*geist-chips*/ .geist-chips{font-family: Geist, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";}</style>
+
+</head>
+<body class="min-h-screen bg-[#F8F8F8]">
+    <!-- Header -->
+    <header class="px-6 py-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center justify-between">
+      <div class="text-2xl font-bold text-black tracking-wide">
+        <img src="Logo Head.svg" alt="Velocity Logo" class="h-8">
+      </div>
+      <a href="mailto:hi@velocityteam.com" class="text-[#111] text-base md:text-lg font-medium hover:underline">hi@velocityteam.com</a>
+    </div>
+  </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="px-6 py-16">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl lg:text-6xl font-bold text-black leading-tight mb-6">
+                    Custom Illustrations<br />& Animation.
+                    <br />
+                    <span class="text-black">Full creative team.</span>
+                    <br />
+                    <span class="text-black">Sprint delivery, </span>
+                    <br />
+                    <span class="text-[#888888]">not months.</span>
+                </h1>
+                <p class="text-lg text-[#373b40] mb-8 max-w-lg leading-relaxed">
+                    Full-time, 1-week sprints: Unlike overstretched freelancers, our salaried team stays fully focused on your
+                    project each sprint.
+                </p>
+                <div class="flex gap-4">
+                    <button onclick="openModal()" class="gradient-orange text-white px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300">
+                        Hire us
+                    </button>
+                    <button onclick="scrollToServices()" class="border-[#E0E0E0] text-[#373b40] px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#F0F0F0] bg-white shadow-sm transition-all duration-300">
+                        Services
+                    </button>
+                </div>
+            </div>
+            <div class="flex justify-start -mt-8 md:-mt-12 lg:-mt-16"><div class="relative w-full max-w-3xl">
+  <video class="block w-full h-auto" width="100%" height="100%" autoplay loop muted playsinline>
+    <source src="metal-box-with-ai-accessories.webm" type="video/webm">
+    <source src="metal-box-with-ai-accessories.mp4" type='video/mp4; codecs="hvc1"'>
+  </video>
+  <div class="absolute left-0 -bottom-6 md:-bottom-8 flex flex-wrap justify-start gap-x-3 gap-y-2 leading-tight geist-chips">
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">2D/3D</span>
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">Icons</span>
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">Illustration</span>
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">Animation</span>
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">Motion</span>
+    <span class="inline-flex items-center justify-center px-4 h-9 md:h-10 rounded-full border border-[#bfb7ab] text-[#373b40] text-sm md:text-base whitespace-nowrap">Interactive</span>
+  </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white px-6 py-16">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl lg:text-5xl font-bold text-black mb-2">100K+</div>
+                <div class="text-[#373b40] text-lg">Graphics assets</div>
+            </div>
+            <div>
+                <div class="text-4xl lg:text-5xl font-bold text-black mb-2">100M+</div>
+                <div class="text-[#373b40] text-lg">Users worldwide</div>
+            </div>
+            <div>
+                <div class="text-4xl lg:text-5xl font-bold text-black mb-2">2011</div>
+                <div class="text-[#373b40] text-lg">14 years experience</div>
+            </div>
+            <div>
+                <div class="text-4xl lg:text-5xl font-bold text-black mb-2">45+</div>
+                <div class="text-[#373b40] text-lg">Won ProductHunt awards</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="px-6 py-20 bg-[#F8F8F8]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl lg:text-6xl font-bold text-black mb-4">Our Services</h2>
+                <p class="text-lg text-[#888888] max-w-2xl mx-auto">
+                    We specialize in creating stunning visual content that brings your ideas to life
+                </p>
+            </div>
+
+            <div class="space-y-2">
+                <!-- Service 1 -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center -mb-8 lg:-mb-12">
+                    <div class="flex items-center gap-6 justify-center lg:justify-start">
+                        <div class="text-2xl font-bold text-[#888888]">01.</div>
+                        <div class="text-center lg:text-left">
+                            <h3 class="text-3xl lg:text-4xl font-bold text-black mb-4">Animated 2D</h3>
+                            <p class="text-[#373b40] text-lg leading-relaxed">
+                                Beautiful 2D animations that capture attention and tell your story effectively
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="rounded-2xl overflow-hidden w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
+                            <video class="block w-full h-full object-contain" width="100%" height="100%" autoplay loop muted playsinline>
+                                <source src="attending-online-meeting-on-laptop.webm" type="video/webm">
+                                <source src="attending-online-meeting-on-laptop.mp4" type='video/mp4; codecs="hvc1"'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center -mt-8 lg:-mt-12 -mb-8 lg:-mb-12">
+                    <div class="flex items-center gap-6 justify-center lg:justify-start lg:order-2">
+                        <div class="text-2xl font-bold text-[#888888]">02.</div>
+                        <div class="text-center lg:text-left">
+                            <h3 class="text-3xl lg:text-4xl font-bold text-black mb-4">Animated 3D</h3>
+                            <p class="text-[#373b40] text-lg leading-relaxed">
+                                Immersive 3D animations that bring depth and realism to your project
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center lg:order-1">
+                        <div class="rounded-2xl overflow-hidden w-72 h-72 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem]">
+                            <video class="block w-full h-full object-contain" width="100%" height="100%" autoplay loop muted playsinline>
+                                <source src="3d-isometric-lettering-artificial-intelligence-with-robot-and-hand-holding-the-brain-text.webm" type="video/webm">
+                                <source src="3d-isometric-lettering-artificial-intelligence-with-robot-and-hand-holding-the-brain-text.mp4" type='video/mp4; codecs="hvc1"'>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center -mb-8 lg:-mb-12">
+                    <div class="flex items-center gap-6 justify-center lg:justify-start">
+                        <div class="text-2xl font-bold text-[#888888]">03.</div>
+                        <div class="text-center lg:text-left">
+                            <h3 class="text-3xl lg:text-4xl font-bold text-black mb-4">Interactive Animation</h3>
+                            <p class="text-[#373b40] text-lg leading-relaxed">
+                                Engaging interactive experiences that respond to user actions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center md:justify-start overflow-visible -ml-0 md:-ml-8 lg:-ml-16">
+                        <div class="relative w-80 h-80 md:w-96 md:h-96 lg:w-[34rem] lg:h-[34rem] overflow-visible">
+                            <!-- абсолютный слой, который «выпирает» за колонку и не ломает сетку -->
+                            <div class="absolute inset-0 w-[110%] md:w-[125%] lg:w-[135%] left-0 md:left-0 lg:left-0 top-0 pointer-events-none z-20">
+                                <iframe
+                                    src="https://my.spline.design/interactivekeyboardbyabhinand-o3LomtnlnTFC5JPR8zbphHN3/"
+                                    class="block w-full h-[20rem] md:h-[26rem] lg:h-[34rem] bg-transparent pointer-events-auto"
+                                    allow="autoplay; xr-spatial-tracking; camera; fullscreen"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="grid lg:grid-cols-2 gap-8 items-center -mt-8 lg:-mt-12">
+                    <div class="flex items-center gap-6 justify-center lg:justify-start lg:order-2">
+                        <div class="text-2xl font-bold text-[#888888]">04.</div>
+                        <div class="text-center lg:text-left">
+                            <h3 class="text-3xl lg:text-4xl font-bold text-black mb-4">Illustration & Icons</h3>
+                            <p class="text-[#373b40] text-lg leading-relaxed">
+                                Custom illustrations and icon sets that perfectly match your brand
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center lg:order-1">
+                        <div class="rounded-2xl overflow-hidden w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
+                            <img src="Icons.svg" alt="Illustration & Icons" class="block w-full h-full object-contain" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Brands Section -->
+    <section class="px-6 py-16 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">Trusted by Leading Brands</h2>
+            <p class="text-[#888888] mb-12 text-lg">We've worked with companies of all sizes, from startups to Fortune 500</p>
+            <div class="flex flex-wrap justify-center lg:justify-between items-center gap-6 lg:gap-4 w-full max-w-6xl mx-auto">
+                <div class="flex items-center justify-center">
+                    <img src="verisign.svg" alt="VeriSign" class="max-h-16 lg:max-h-24 max-w-32 lg:max-w-48 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="motorola.svg" alt="Motorola" class="max-h-16 lg:max-h-24 max-w-32 lg:max-w-48 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="qualcomm.svg" alt="Qualcomm" class="max-h-16 lg:max-h-24 max-w-32 lg:max-w-48 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="PG.svg" alt="P&G" class="max-h-12 lg:max-h-14 max-w-24 lg:max-w-28 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="oracle.svg" alt="Oracle" class="max-h-16 lg:max-h-24 max-w-32 lg:max-w-48 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="hp.svg" alt="HP" class="max-h-12 lg:max-h-14 max-w-24 lg:max-w-28 object-contain" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="danone.svg" alt="Danone" class="max-h-16 lg:max-h-24 max-w-28 lg:max-w-32 object-contain" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="px-6 py-20 bg-[#F8F8F8]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">Choose Your Plan</h2>
+                <p class="text-lg text-[#888888]">Flexible pricing options to match your project needs and timeline</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Sprint Plan -->
+                <div class="bg-white border border-[#E0E0E0] rounded-2xl p-8 shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-black mb-2">Sprint</h3>
+                        <div class="text-[#888888] text-lg">1 week</div>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-[#373b40] text-base">
+                        <li>20 hours of creative work</li>
+                        <li>2D/3D graphics or animations</li>
+                        <li>1 revision round included</li>
+                        <li>Next sprint starts immediately</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full bg-white text-black hover:bg-[#F8F8F8] py-3 rounded-full text-lg font-semibold border-2 border-[#90EE90] shadow-sm transition-all duration-300">
+                        $4500
+                    </button>
+                </div>
+
+                <!-- Marathon Plan -->
+                <div class="bg-white border border-[#E0E0E0] rounded-2xl p-8 shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-black mb-2">Marathon</h3>
+                        <div class="text-[#888888] text-lg">1 month</div>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-[#373b40] text-base">
+                        <li>80 hours of creative work</li>
+                        <li>2D/3D graphics or animations</li>
+                        <li>3 revision rounds included</li>
+                        <li>Same quality, more volume</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full bg-white text-black hover:bg-[#F8F8F8] py-3 rounded-full text-lg font-semibold border-2 border-[#87CEEB] shadow-sm transition-all duration-300">
+                        $8500
+                    </button>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white border border-[#E0E0E0] rounded-2xl p-8 shadow-sm">
+                    <div class="mb-6">
+                        <h3 class="text-3xl lg:text-4xl font-bold text-black mb-2">Enterprise</h3>
+                        <div class="text-[#888888] text-lg">Ongoing</div>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-[#373b40] text-base">
+                        <li>Embedded creative team</li>
+                        <li>Priority queue access</li>
+                        <li>Unlimited revisions</li>
+                        <li>Monthly strategy calls</li>
+                    </ul>
+                    <button onclick="openModal()" class="w-full bg-white text-black hover:bg-[#F8F8F8] py-3 rounded-full text-lg font-semibold border-2 border-[#FFB6C1] shadow-sm transition-all duration-300">
+                        Custom pricing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="px-6 py-20 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-black mb-4">F.A.Q.</h2>
+                <p class="text-lg text-[#888888]">Everything you need to know about working with us</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <span class="text-lg font-semibold text-black">What's a Sprint?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-1">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-1">
+                        <p class="text-[#373b40] leading-relaxed">
+                            A Sprint is a one-week creative boost. You get 20 hours of focused design work from our team — illustrations, 2D/3D graphics, or animations. One round of revisions is included. Perfect if you need something fast and polished.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(2)">
+                        <span class="text-lg font-semibold text-black">How is a Marathon different?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-2">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-2">
+                        <p class="text-[#373b40] leading-relaxed mb-4">
+                            Think of a Sprint as a short race, and a Marathon as the long game.
+                        </p>
+                        <ul class="text-[#373b40] leading-relaxed space-y-2 mb-4">
+                            <li><strong>Sprint ($4,500 / 1 week):</strong> Quick projects, test ideas, smaller design needs.</li>
+                            <li><strong>Marathon ($8,500 / 1 month):</strong> Bigger scope, more time, more revisions (3 rounds).</li>
+                            <li><strong>Enterprise:</strong> Ongoing partnership with unlimited revisions and priority access.</li>
+                        </ul>
+                        <p class="text-[#373b40] leading-relaxed">
+                            If you are not sure which plan will suit you based on the volume of work, please describe your requests and idea in a short cover letter. This way we can offer you what suits you best.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(3)">
+                        <span class="text-lg font-semibold text-black">What exactly can you create?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-3">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-3">
+                        <p class="text-[#373b40] leading-relaxed mb-4">
+                            Anything in 2D or 3D visuals:
+                        </p>
+                        <ul class="text-[#373b40] leading-relaxed space-y-2">
+                            <li>Custom illustrations for websites, apps, and campaigns</li>
+                            <li>Hero animations for landing pages</li>
+                            <li>Explainer graphics and storytelling visuals</li>
+                            <li>Abstract backgrounds and motion design</li>
+                        </ul>
+                        <p class="text-[#373b40] leading-relaxed mt-4">
+                            If it's visual and digital — we can make it.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(4)">
+                        <span class="text-lg font-semibold text-black">How do revisions work?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-4">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-4">
+                        <p class="text-[#373b40] leading-relaxed mb-4">
+                            Each package has a set number of revision rounds:
+                        </p>
+                        <ul class="text-[#373b40] leading-relaxed space-y-2 mb-4">
+                            <li><strong>Sprint →</strong> 1 round. A call or a clarification by correspondence, at any development round you choose - mid- or final.</li>
+                            <li><strong>Marathon →</strong> 3 rounds.</li>
+                            <li><strong>Enterprise →</strong> unlimited.</li>
+                        </ul>
+                        <p class="text-[#373b40] leading-relaxed">
+                            One round usually covers everything, but if you need more, we can always add extra.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(5)">
+                        <span class="text-lg font-semibold text-black">What if I need more hours?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-5">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-5">
+                        <p class="text-[#373b40] leading-relaxed">
+                            Easy. You can book another Sprint, extend into a Marathon, or move into Enterprise if you want us on your team long-term.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(6)">
+                        <span class="text-lg font-semibold text-black">How do we collaborate?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-6">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-6">
+                        <p class="text-[#373b40] leading-relaxed">
+                            We work like your design partner, not a black box. You'll get a dedicated creative lead and we'll use shared tools (Miro, Notion, Figma — whatever works best for you). Quick check-ins, clear progress, no surprises.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(7)">
+                        <span class="text-lg font-semibold text-black">Do you follow brand guidelines?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-7">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-7">
+                        <p class="text-[#373b40] leading-relaxed">
+                            Absolutely. If you have brand guidelines, we stick to them. If not, we'll help shape visuals that fit your style.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(8)">
+                        <span class="text-lg font-semibold text-black">Can I pause or cancel?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-8">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-8">
+                        <ul class="text-[#373b40] leading-relaxed space-y-2 mb-4">
+                            <li><strong>Sprints:</strong> Once we start, we go all in for the week.</li>
+                            <li><strong>Marathons:</strong> We can pause if needed, as long as we plan it together.</li>
+                            <li><strong>Enterprise:</strong> More flexible, tailored to your needs.</li>
+                        </ul>
+                        <p class="text-[#373b40] leading-relaxed">
+                            Important: payment is non-refundable, but we will reschedule the remaining time. For example, you can pause marathon in the middle of the process, and return to us, if you still will have already paid hours.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 9 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(9)">
+                        <span class="text-lg font-semibold text-black">What do I get at the end?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-9">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-9">
+                        <p class="text-[#373b40] leading-relaxed">
+                            All the final files you need, in the right formats (SVG, PNG, GIF, MP4, Lottie, etc.). Ready to use right away. Everything you get in the end is discussed at the beginning, when we agree on the project. What we agreed on is what you got.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 10 -->
+                <div class="border border-[#E0E0E0] rounded-2xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left bg-white hover:bg-[#F8F8F8] transition-colors duration-300 flex justify-between items-center" onclick="toggleFAQ(10)">
+                        <span class="text-lg font-semibold text-black">Do you also help with strategy?</span>
+                        <span class="text-2xl text-[#888888] transition-transform duration-300" id="icon-10">+</span>
+                    </button>
+                    <div class="hidden px-6 py-4 bg-[#F8F8F8] border-t border-[#E0E0E0]" id="content-10">
+                        <p class="text-[#373b40] leading-relaxed">
+                            Our main focus is execution — making great visuals. But if you're on Enterprise, we can also do strategy calls to plan ahead and explore new creative ideas together.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black px-6 py-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-white text-sm">
+            <div>hi@velocityteam.com</div>
+            <div>© 2025 Velocity Team</div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 text-center">
+            <div class="flex justify-center"><img src="Logo Down.svg" alt="Velocity Logo" class="h-48"></div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-[#F8F8F8] rounded-2xl p-8 max-w-md w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-3xl lg:text-4xl font-bold text-black">Contact Us</h3>
+                <button onclick="closeModal()" class="text-[#888888] hover:text-black text-2xl font-bold">
+                    ×
+                </button>
+            </div>
+            
+            <p class="text-[#373b40] text-sm leading-relaxed mb-6">
+                Leave your contact details and tell us a bit about your project. This will help us understand your goals and suggest the best way to work together.
+            </p>
+            
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Name" required 
+                           class="w-full px-4 py-3 border border-black rounded-lg bg-white text-black text-sm focus:outline-none focus:border-[#FF6B35]">
+                </div>
+                
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email" required 
+                           class="w-full px-4 py-3 border border-black rounded-lg bg-white text-black text-sm focus:outline-none focus:border-[#FF6B35]">
+                </div>
+                
+                <div>
+                    <textarea id="message" name="message" placeholder="Message" required rows="4"
+                              class="w-full px-4 py-3 border border-black rounded-lg bg-white text-black text-sm focus:outline-none focus:border-[#FF6B35] resize-none"></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-[#FF6B35] hover:bg-[#FF4500] text-white text-sm font-semibold py-3 px-6 rounded-full border border-black transition-colors">
+                    SUBMIT
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.getElementById('contactModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+        
+        // Handle form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                message: formData.get('message')
+            };
+            
+            // Create mailto link
+            const mailtoLink = `mailto:ouchillustrations@gmail.com?subject=${encodeURIComponent('Velocity')}&body=${encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`)}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Close modal
+            closeModal();
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scroll to services section
+        function scrollToServices() {
+            const servicesSection = document.getElementById('services');
+            servicesSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        
+        // FAQ accordion functionality
+        function toggleFAQ(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                // Close all other FAQ items
+                for (let i = 1; i <= 10; i++) {
+                    const otherContent = document.getElementById(`content-${i}`);
+                    const otherIcon = document.getElementById(`icon-${i}`);
+                    if (otherContent && otherIcon) {
+                        otherContent.classList.add('hidden');
+                        otherIcon.textContent = '+';
+                        otherIcon.style.transform = 'rotate(0deg)';
+                    }
+                }
+                
+                // Open current item
+                content.classList.remove('hidden');
+                icon.textContent = '×';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close current item
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>
